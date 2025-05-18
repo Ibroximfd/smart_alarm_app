@@ -1,0 +1,96 @@
+✅ README.md
+md
+Copy
+Edit
+# ⏰ Smart Alarm App
+
+A Flutter-based Smart Alarm application with sleep reminder, snooze feature, background alarm ringing, vibration and localization support. Built using Bloc architecture and SharedPreferences for local state management.
+
+---
+
+## 🧩 Features
+
+- 💤 Sleep Reminder with time picker
+- 🔔 Background alarm ringing using `android_alarm_manager_plus`
+- 📳 Ringtone playback via `just_audio`
+- 🌐 Multi-language support: English, Russian, Uzbek
+- 🧠 Bloc-based clean state management
+- 🔧 Local storage using `SharedPreferences`
+- 🛑 Ringing screen with stop button
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Ibroximfd/smart_alarm_app.git
+cd smart_alarm_app
+2. Install dependencies
+bash
+Copy
+Edit
+flutter pub get
+3. Run the app
+bash
+Copy
+Edit
+flutter run
+📂 Folder Structure
+pgsql
+Copy
+Edit
+lib/
+├── logic/
+│   └── blocs/
+│       └── sleep_reminder/
+├── presentation/
+│   └── pages/
+├── services/
+├── assets/
+│   └── langs/   # en.json, ru.json, uz.json
+│   └── sounds/  # alarm.mp3
+📦 Dependencies
+flutter_bloc
+
+easy_localization
+
+just_audio
+
+android_alarm_manager_plus
+
+flutter_local_notifications
+
+shared_preferences
+
+⚙️ Android Setup
+In android/app/build.gradle.kts, make sure you include:
+
+kotlin
+Copy
+Edit
+ndkVersion = "27.0.12077973"
+
+compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+    isCoreLibraryDesugaringEnabled = true
+}
+
+dependencies {
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.5")
+}
+🌍 Localization Support
+English 🇺🇸
+
+Russian 🇷🇺
+
+Uzbek 🇺🇿
+
+Using easy_localization and assets/langs/ JSON files.
+
+👨‍💻 Author
+Ibroxim Umaraliyev
+GitHub: @Ibroximfd
+
